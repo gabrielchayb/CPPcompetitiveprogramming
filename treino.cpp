@@ -2,12 +2,30 @@
 using namespace std ;
 
 int main() {
-    string s;
-    int qtd = 0;
-
-    getline(cin, s);
+    int N;
+    int cont = 0;
+    cin >> N; 
     
-    qtd = s.size();
-    cout << qtd << endl;
+    vector<char> gab;
+    vector<char> resp;
+
+    for(int i = 0; i < N; i++){
+        char aux; 
+        cin >> aux; 
+        gab.push_back(aux);
+    }
+
+    for(int i = 0; i < N; i++){
+        char aux;
+        cin >> aux;
+        resp.push_back(aux);
+    }
+
+    for(int i = 0; i < N; i++){
+        if(gab[i] == resp[i]){
+            cont++;
+        }
+    }
+    cout << cont << endl;
 }
 
