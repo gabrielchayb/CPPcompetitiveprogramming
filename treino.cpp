@@ -2,14 +2,12 @@
 using namespace std ;
 
 int main() {
-    int v[10];
+    string s;
+    int qtd = 0;
 
-    for(int i = 0; i < 10; i++){
-        cin >> v[i];
-    }
-
-    for(int i = 9; i >= 0; i--){
-        cout << v[i] << " ";
-    }
+    getline(cin, s);
+    
+    qtd = s.size();
+    cout << qtd << endl;
 }
 
